@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    font-family: Quicksand , sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#page-logo a{
+font-family: "oleo script";
+font-size: 50px;
+color: rgb(235, 235, 31);
+text-shadow: 1px 1px 2px rgb(0, 0, 0);
+padding: 10px;
+text-transform: uppercase;
+}
+
+#page-logo a:hover{
+    color: #60AEA6;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+li a{
+    margin: 20px; 
+    color: white;
+    font-family: raleway;
+    background-color: #60AEA6;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+li a:hover{
+color: black;
+background-color: yellow;
+}
+
+#hero{
+    height: 850px;
+    background-image: url(images/ocean.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-content{
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#hero-content h1{
+    font-family: raleway;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#hero-content p{
+    font-family: raleway;
+    font-size: 24px;
+    color: white;
+}
+
+#hero-content a{
+    font-family: raleway;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#hero-content a:hover{
+    background-color: #60AEA6 ;
+}
