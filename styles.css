@@ -1,105 +1,178 @@
-body{
-    margin: 0px;
-    font-family: Quicksand , sans-serif;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Quicksand, sans-serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-header{
-    display:flex;
-    justify-content: space-between;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#page-logo a {
+  font-family: "oleo script";
+  font-size: 50px;
+  color: rgb(235, 235, 31);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#page-logo a:hover {
+  color: #60aea6;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+nav li a {
+  margin: 20px;
+  color: white;
+  font-family: raleway;
+  background-color: #60aea6;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+nav li a:hover {
+  color: black;
+  background-color: yellow;
+}
+
+#hero {
+  height: 850px;
+  background-image: url(images/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  width: 500px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#hero-content h1 {
+  font-family: raleway;
+  font-size: 50px;
+  color: white;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+#hero-content p {
+  font-family: raleway;
+  font-size: 24px;
+  color: white;
+}
+
+#hero-content a {
+  font-family: raleway;
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#hero-content a:hover {
+  background-color: #60aea6;
+}
+
+#highlights {
+  display: flex;
+  flex-direction: column;
+  background-color: #c3eef0;
+  position: absolute;
+  width: 100%;
+  top: 600px;
+}
+
+#highlights h2 {
+text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 20px 0px;
+}
+
+#destination {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.destination {
+  margin: 0 20px;
+}
+
+.destination p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: rgb(124, 123, 123);
+  margin-top: 10px;
+}
+
+.destination strong {
+  color: rgb(0, 160, 117);
+}
+
+.destination img {
+  height: 200px;
+  width: 300px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+footer{
+    position: relative;
+    height: 100px;
+    display: flex;
     align-items: center;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#page-logo a{
-font-family: "oleo script";
-font-size: 50px;
-color: rgb(235, 235, 31);
-text-shadow: 1px 1px 2px rgb(0, 0, 0);
-padding: 10px;
-text-transform: uppercase;
-}
-
-#page-logo a:hover{
-    color: #60AEA6;
-}
-
-ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-}
-
-li a{
-    margin: 20px; 
-    color: white;
-    font-family: raleway;
-    background-color: #60AEA6;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-li a:hover{
-color: black;
-background-color: yellow;
-}
-
-#hero{
-    height: 850px;
-    background-image: url(images/ocean.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    top: 100px;
+    background-color: black;
 }
 
-#hero-content{
-    width: 500px;
-    height: 200px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+footer ul{
+  align-items: center;
 }
 
-#hero-content h1{
-    font-family: raleway;
-    font-size: 50px;
-    color: white;
-    margin: 0px;
-    margin-top: 10px;
+#ig{
+  height: 70px;
+  width: 70px;
 }
 
-#hero-content p{
-    font-family: raleway;
-    font-size: 24px;
-    color: white;
-}
-
-#hero-content a{
-    font-family: raleway;
-    color: black;
-    background-color: yellow;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-#hero-content a:hover{
-    background-color: #60AEA6 ;
+#fb{
+  height: 100px;
+  width: 100px;
+margin: 0 50px;
 }
